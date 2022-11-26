@@ -1,0 +1,28 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{     
+    "name":"dat",
+    "email": "van1@gmail.com",
+    "password" :"anhvan",
+    "number_phone" :"0941126333"
+}
+
+
+//đăng nhập
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "tran anh van1@gmail.com",
+    "password" : "anhvan"
+}
+
+###
+POST http://localhost:5000/api/roles/ok
+
+Content-Type: application/json
+{
+    "roleName" : "admin"  
+}
